@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:sqlite:/Users/domnicateodor/Downloads/Cinema3/Cinema.db</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="current_session_context_class">thread</property>
+
+        <property name="show_sql">false</property>
+        <!--        disable the info and debug messages-->
+        <property name="hibernate.show_sql">false</property>
+        <!--        <property name="hibernate.format_sql">false</property>-->
+        <property name="hibernate.use_sql_comments">false</property>
+
+        <property name="log4j.logger.org.hibernate">ERROR</property>
+
+        <mapping class="com.example.Model.Admin"/>
+        <mapping class="com.example.Model.Loc"/>
+        <mapping class="com.example.Model.Entitate"/>
+        <mapping class="com.example.Model.Rezervare"/>
+        <mapping class="com.example.Model.Bilet"/>
+    </session-factory>
+</hibernate-configuration>

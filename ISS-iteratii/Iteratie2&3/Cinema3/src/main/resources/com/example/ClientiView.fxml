@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ClientController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="numeClient" layoutX="404.0" layoutY="48.0" />
+                <TextField fx:id="prenumeClient" layoutX="404.0" layoutY="95.0" />
+                <TextField fx:id="nrTelefon" layoutX="404.0" layoutY="143.0" />
+                <TextField fx:id="email" layoutX="404.0" layoutY="200.0" />
+                <Button onAction="#makeReservation" layoutX="457.0" layoutY="270.0" mnemonicParsing="false" text="Rezerva" />
+                <GridPane fx:id="gridPaneLocuri" layoutX="72.0" layoutY="108.0" prefHeight="170.0" prefWidth="281.0" AnchorPane.leftAnchor="72.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button onAction="#selectLoc" fx:id="buton1" mnemonicParsing="false" text="LOC" />
+                        <Button onAction="#selectLoc" fx:id="buton2" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" />
+                        <Button onAction="#selectLoc" fx:id="buton3" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" />
+                        <Button onAction="#selectLoc" fx:id="buton4" mnemonicParsing="false" text="LOC" GridPane.rowIndex="1" />
+                        <Button onAction="#selectLoc" fx:id="buton5" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button onAction="#selectLoc" fx:id="buton6" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button onAction="#selectLoc" fx:id="buton7" mnemonicParsing="false" text="LOC" GridPane.rowIndex="2" />
+                        <Button onAction="#selectLoc" fx:id="buton8" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button onAction="#selectLoc" fx:id="buton9" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button onAction="#selectLoc" fx:id="buton10" mnemonicParsing="false" text="LOC" GridPane.rowIndex="3" />
+                        <Button onAction="#selectLoc" fx:id="buton11" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button onAction="#selectLoc" fx:id="buton12" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button onAction="#selectLoc" fx:id="buton13" mnemonicParsing="false" text="LOC" GridPane.rowIndex="4" />
+                        <Button onAction="#selectLoc" fx:id="buton14" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button onAction="#selectLoc" fx:id="buton15" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Button onAction="#selectLoc" fx:id="buton16" mnemonicParsing="false" text="LOC" GridPane.rowIndex="5" />
+                        <Button onAction="#selectLoc" fx:id="buton17" mnemonicParsing="false" text="LOC" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Button onAction="#selectLoc" fx:id="buton18" mnemonicParsing="false" text="LOC" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                    </children>
+                </GridPane>
+                <Label layoutX="86.0" layoutY="87.0" prefHeight="17.0" prefWidth="0.0" text="1" />
+                <Label layoutX="179.0" layoutY="87.0" text="2" />
+                <Label layoutX="273.0" layoutY="87.0" text="3" />
+                <Label layoutX="57.0" layoutY="113.0" text="1" />
+                <Label layoutX="56.0" layoutY="143.0" text="2" />
+                <Label layoutX="56.0" layoutY="169.0" text="3" />
+                <Label layoutX="56.0" layoutY="200.0" text="4" />
+                <Label layoutX="56.0" layoutY="226.0" text="5" />
+                <Label layoutX="56.0" layoutY="253.0" text="6" />
+                <Label layoutX="362.0" layoutY="53.0" text="Nume" />
+                <Label layoutX="354.0" layoutY="100.0" text="Prenume" />
+                <Label layoutX="355.0" layoutY="148.0" text="Telefon" />
+                <Label layoutX="361.0" layoutY="205.0" text="E-mail" />
+                <Label fx:id="totalPret" layoutX="167.0" layoutY="328.0" text="TOTAL" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
